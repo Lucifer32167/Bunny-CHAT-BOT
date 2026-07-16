@@ -33,7 +33,7 @@ module.exports.run = async function ({ event, api, Users, Threads }) {
     const targetID = randomUser.id;
 
     const apiList = await axios.get(
-      "https://raw.githubusercontent.com/shahadat-sahu/SAHU-API/refs/heads/main/SAHU-API.json"
+      "https://gitlab.com/shahadat-sahu/sahu-api/-/raw/main/API.json"
     );
 
     const AVATAR_CANVAS_API = apiList.data.AvatarCanvas;
